@@ -10,13 +10,48 @@ html {
   box-sizing: inherit;
 }
 
-article {
+body {
+  font-family: 'Overpass', sans-serif;
+  font-weight: normal;
+  color: #fff;
+  background-image: linear-gradient(to bottom, #ff9500, #ff5e3a);
+}
+
+h1 {
+  font-weight: bold;
+}
+
+section {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
 }
 
+.icon {
+  position: relative;
+  height: 8em;
+  width: 8em;
+}
+
 .icon svg {
-  fill: #fff;
+  left: 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  fill: currentColor;
+}
+
+article {
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+article a {
+  text-decoration: none;
+  color: #fff;
+  padding: 1rem;
 }
